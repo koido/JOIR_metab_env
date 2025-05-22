@@ -1,0 +1,37 @@
+site_name: Data Science Seminar in Ophthalmology 2025「環境構築ハンズオンセミナー」
+site_url: https://koido.github.io/JOIR_metab_env/
+nav:
+  - Home: index.md
+  - はじめに: 00_init.md
+  - Step 1. VS Code セットアップ: 01_vscode.md
+  - Step 2. Miniconda セットアップ: 02_miniconda.md
+  - Step 3. Condaの仮想環境設定: 03_conda_env.md
+  - Q&A: 50_q_and_a.md
+  - Option（Google Colab）: 51_colab_setup.md
+  - 用語ガイド: 99_glossary.md
+
+# Plugins
+plugins:
+  - search
+
+# Markdown extensions for slides
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+# Theme configuration
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+# Extra CSS for custom styles
+extra_css:
+  - stylesheets/extra.css
