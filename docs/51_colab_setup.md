@@ -10,7 +10,7 @@
 
 ## 解析ハンズオンに使えそうな Colab ノートブック
 
-- [解析ハンズオンの Colab ノートブック](https://colab.research.google.com/gist/koido/6ab17ce6caa338717528bb5d9f3f1c99/joir_env_demo.ipynb?hl=ja)
+- [解析ハンズオンの Colab ノートブック](https://colab.research.google.com/gist/koido/f57420a3c14832459aa0462c495de189/joir_env_demo_miniforge.ipynb?hl=ja)
 
 解析環境構築までのノートブックを用意しました。
 
