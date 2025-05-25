@@ -4,7 +4,7 @@
 
 環境構築自体は、より軽量な Micromamba を利用することで解決できる可能性がありますが、その後のモデル実行時にもメモリ不足が発生する可能性が高いと考えられます。
 
-## Minicondaではなく、Micromamba を使って環境を作成したい (Apple Silicon)
+## Miniforge ではなく、Micromamba を使って環境を作成したい (Apple Silicon)
 
 Rosetta 2 をインストールしてから、次のコマンドで環境を作成します。
 

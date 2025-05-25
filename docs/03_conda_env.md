@@ -20,11 +20,13 @@ OS・環境ごとに利用可能なライブラリが一部異なる場合があ
 
 ### Windows
 
-なぜか tensorflow==2.4.0 がconda-forgeにないので、近いバージョン（2.3.0）を使います。
-他の依存関係も複雑ですが、Windows端末でインストールが正常に完了した以下のバージョンを、本セミナーでは使用します。
+conda-forgeでは、tensorflow>2.0.0が提供されていないため、
+若干トリッキーですが、`conda` で作った仮想環境（Pythonバージョン指定）に `pip` で必要なライブラリをインストールすることにします。
 
-```bash
-conda create -n tf24_env -c conda-forge -y python==3.8.15 tensorflow==2.3.0 opencv==4.6.0 numpy==1.23.5
+```powershell
+conda create -n tf24_env -c conda-forge -y python==3.8.15
+conda activate tf24_env
+pip install tensorflow==2.4.0 opencv-python==4.3.0.36 numpy==1.19.2
 ```
 
 ### macOS (Apple Silicon)

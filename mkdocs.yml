@@ -4,7 +4,7 @@ nav:
   - Home: index.md
   - はじめに: 00_init.md
   - Step 1. VS Code セットアップ: 01_vscode.md
-  - Step 2. Miniconda セットアップ: 02_miniconda.md
+  - Step 2. Conda セットアップ: 02_conda.md
   - Step 3. Condaの仮想環境設定: 03_conda_env.md
   - Q&A: 50_q_and_a.md
   - Option（Google Colab）: 51_colab_setup.md

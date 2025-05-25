@@ -14,7 +14,7 @@
 
 - [はじめに](00_init.md)
 1. [Step 1. VS Code セットアップ](01_vscode.md) – エディタのインストールと設定
-1. [Step 2. Miniconda セットアップ](02_miniconda.md) – Python をまとめて管理できるツール「Miniconda」のインストールとセットアップ
+1. [Step 2. Conda セットアップ](02_conda.md) – Python をまとめて管理できるツール `conda` のインストールとセットアップ
 1. [Step 3. Condaの仮想環境設定](03_conda_env.md) – 実際に*解析実践ハンズオンセミナー*で使用する仮想環境を作成します
 1. [Q&A](50_q_and_a.md) – よくある問題の解決策
 1. [Option: Google Colab での実行](51_colab_setup.md) – スペック不足などの場合にGoogle Colab 上でノートブックを実行する手順

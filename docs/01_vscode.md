@@ -4,7 +4,7 @@ Visual Studio Code (VS Code) は Microsoft が提供する軽量な開発用エ�
 
 このガイドはWindowsとmacOSにVS Codeをインストールし、Python開発・実行に推奨される拡張機能を設定する方法を説明します。
 
-この時点で、Python (or miniconda) のインストールが完了している必要はありません。
+この時点で、Python (or `conda`) のインストールが完了している必要はありません。
 
 ## 1-1. Windowsにインストール
 
@@ -12,6 +12,7 @@ Visual Studio Code (VS Code) は Microsoft が提供する軽量な開発用エ�
     - Windows 10/11用の一番大きいアイコンをクリック
 2. インストーラーを実行し、指示に従ってインストールを完了させます。
     - 基本的に、設定はデフォルトのままで問題ありません。
+    - "accept agreement" だけは、チェックをしっかり入れないと進めません。
 3. インストールが完了したら、スタートメニューから VS Code を起動します。
 
 生成AI（GitHub Copilot）の案内が表示される場合がありますが、本セミナーの手順ではサインインは不要です。
