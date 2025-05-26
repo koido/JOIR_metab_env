@@ -1,23 +1,22 @@
-# Miniconda セットアップガイド
+# Conda セットアップガイド
 
-Miniconda は conda による環境管理を最小構成で実現する軽量ディストリビューションです。
-このドキュメントでは、Windows と macOS/Linux で Miniconda をダウンロードし、インストール、初期設定する方法を説明します。
+Conda は、Python の依存関係や仮想環境を管理するツールです。
+Miniforge は、conda-forge (コミュニティ主導のパッケージリポジトリ) による、conda による環境管理を最小構成で実現する軽量ディストリビューションです。
+このドキュメントでは、Windows と macOS/Linux で Miniforge をダウンロードし、インストール、初期設定する方法を説明します。
 
 ## 目次
-
 
 ## 1. Windowsユーザー向け
 
 ### 1.1 ダウンロード
 
-まずは [Anaconda のダウンロードページ](https://www.anaconda.com/download) にアクセスします。
-表示される画面右側の枠の下の方にある **Skip registration** を選択すると、"**Miniconda Installers**" の一覧が表示されます。
+まずは [Miniforge のダウンロードページ](https://conda-forge.org/download/) にアクセスします。
 
-ここから、ご利用のOSに応じたインストーラーをダウンロードしてください。
+右下に　Windows (x86_64) と表示されているので、それをクリックします。
 
 ### 1.2 インストール
 
-ダウンロードした`.exe` インストーラー （Windows）を実行します。
+ダウンロードした`Miniforge3-Windows-x86_64.exe` インストーラーを実行します。
 
 基本的に、チェック項目はデフォルトのままでインストール作業を進めてください。
 
@@ -33,11 +32,27 @@ Windowsの場合、初期設定だと PowerShell が使われているはずで�
 
 次のコマンドを実行します（最初の部分は、 "インストール先"\condabin/conda です）。
 
-```bash
-C:\ProgramData\miniconda3\condabin\conda init
+```powershell
+C:\ProgramData\miniforge3\condabin\conda init
 ```
 
-一度ターミナル（かVS Codeそのもの）を閉じて開くと、次からは `C:\ProgramData\miniconda3\condabin\conda` と打たなくても `conda` だけでよくなります。
+一度ターミナル（かVS Codeそのもの）を閉じて開くと、次からは `C:\ProgramData\miniforge3\condabin\conda` なんて打たなくても `conda` だけでよくなります。
+
+#### 1.4 `conda` インストールの確認
+
+以下のコマンドでインストールを確認します。
+
+```powershell
+conda --version
+```
+
+バージョンが表示されれば、以降はターミナルで `conda` コマンドを使って環境を作成、管理できるようになります。
+
+なお、インストールされた場所を確認するには、以下のコマンドを実行します (PowerShell)。
+
+```powershell
+which.exe conda
+```
 
 ## 2. macOSユーザー向け
 
@@ -63,14 +78,14 @@ Apple Silicon の場合:
 
 ```bash
 cd Downloads
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh
 ```
 
 Intel の場合:
 
 ```bash
 cd Downloads
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-x86_64.sh
 ```
 
 ### 2.4 インストール (最初のコマンド)
@@ -78,13 +93,13 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 Apple Silicon の場合:
 
 ```bash
-bash Miniconda3-latest-MacOSX-arm64.sh
+bash Miniforge3-MacOSX-arm64.sh
 ```
 
 Intel の場合:
 
 ```bash
-bash Miniconda3-latest-MacOSX-x86_64.sh
+bash Miniforge3-MacOSX-x86_64.sh
 ```
 
 ### 2.5 インストール (続き)
@@ -114,14 +129,14 @@ Do you accept the license terms? [yes|no]
 #### 2.5.2 インストール先ディレクトリの指定
 
 ```text
-Miniconda3 will now be installed into this location:
-/Users/"your_name"/miniconda3
+Miniforge3 will now be installed into this location:
+/Users/"your_name"/miniforge3
 
   - Press ENTER to confirm the location
   - Press CTRL-C to abort the installation
   - Or specify a different location below
 
-[/Users/"your_name"/miniconda3] >>> 
+[/Users/"your_name"/miniforge3] >>>
 ```
 
 インストール先ディレクトリを問われています。エンターキーを押すと、デフォルトの場所（四角カッコ内に表示）にインストールされます。
@@ -129,11 +144,12 @@ Miniconda3 will now be installed into this location:
 
 いずれにせよ、このディレクトリは控えておいてください。
 
-本チュートリアルでは、デフォルトの場所にインストールされていることを前提とします。
+なお、本チュートリアルでは、デフォルトの場所にインストールされていることを前提とします。
 
 #### 2.5.3 `conda init` の実行確認
 
 ```text
+installation finished.
 Do you wish to update your shell profile to automatically initialize conda?
 This will activate conda on startup and change the command prompt when activated.
 If you'd prefer that conda's base environment not be activated on startup,
@@ -142,13 +158,18 @@ If you'd prefer that conda's base environment not be activated on startup,
 conda config --set auto_activate_base false
 
 You can undo this by running `conda init --reverse $SHELL`? [yes|no]
-[yes] >>> 
+[no] >>>
 ```
 
-Miniconda3 の初期化を問われています。`yes` と入力してください。
+Miniforge3 の初期化設定を問われています。`yes` と入力してください。
 
+すると、デフォルトのシェル ($SHELL) に、`conda` の初期化設定が追加されます。
 
-#### 2.5.4 ターミナルを再起動するか、またはシェルの設定をリロードして、以下のコマンドでインストールを確認します。
+#### 2.5.4 `conda` インストールの確認
+
+ターミナルを再起動するか、またはシェルの設定をリロードします。
+
+以下のコマンドでインストールを確認します。
 
 ```bash
 conda --version
