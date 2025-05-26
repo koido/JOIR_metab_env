@@ -375,9 +375,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#miniforge-micromamba-apple-silicon" class="md-nav__link">
+  <a href="#miniconda-miniforge" class="md-nav__link">
     <span class="md-ellipsis">
-      Miniforge ではなく、Micromamba を使って環境を作成したい (Apple Silicon)
+      Miniconda ではなく、Miniforge を使って環境を作成したい
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miniconda-micromamba-apple-silicon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Miniconda ではなく、Micromamba を使って環境を作成したい (Apple Silicon)
     </span>
   </a>
   
@@ -471,9 +480,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#miniforge-micromamba-apple-silicon" class="md-nav__link">
+  <a href="#miniconda-miniforge" class="md-nav__link">
     <span class="md-ellipsis">
-      Miniforge ではなく、Micromamba を使って環境を作成したい (Apple Silicon)
+      Miniconda ではなく、Miniforge を使って環境を作成したい
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miniconda-micromamba-apple-silicon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Miniconda ではなく、Micromamba を使って環境を作成したい (Apple Silicon)
     </span>
   </a>
   
@@ -498,7 +516,9 @@
 <h1 id="qa">Q&amp;A<a class="headerlink" href="#qa" title="Permanent link">&para;</a></h1>
 <h2 id="conda-out-of-memory">Conda 環境の作成時に out of memory が出た<a class="headerlink" href="#conda-out-of-memory" title="Permanent link">&para;</a></h2>
 <p>環境構築自体は、より軽量な Micromamba を利用することで解決できる可能性がありますが、その後のモデル実行時にもメモリ不足が発生する可能性が高いと考えられます。</p>
-<h2 id="miniforge-micromamba-apple-silicon">Miniforge ではなく、Micromamba を使って環境を作成したい (Apple Silicon)<a class="headerlink" href="#miniforge-micromamba-apple-silicon" title="Permanent link">&para;</a></h2>
+<h2 id="miniconda-miniforge">Miniconda ではなく、Miniforge を使って環境を作成したい<a class="headerlink" href="#miniconda-miniforge" title="Permanent link">&para;</a></h2>
+<p><a href="../52_miniforge/">こちら</a> を参照してください。</p>
+<h2 id="miniconda-micromamba-apple-silicon">Miniconda ではなく、Micromamba を使って環境を作成したい (Apple Silicon)<a class="headerlink" href="#miniconda-micromamba-apple-silicon" title="Permanent link">&para;</a></h2>
 <p>Rosetta 2 をインストールしてから、次のコマンドで環境を作成します。</p>
 <div class="highlight"><pre><span></span><code>micromamba<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>tf24_env<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span><span class="nv">python</span><span class="o">==</span><span class="m">3</span>.8.15<span class="w"> </span><span class="nv">tensorflow</span><span class="o">==</span><span class="m">2</span>.4.0<span class="w"> </span><span class="nv">opencv</span><span class="o">==</span><span class="m">4</span>.4.0<span class="w"> </span><span class="nv">numpy</span><span class="o">==</span><span class="m">1</span>.19<span class="w"> </span><span class="se">\</span>

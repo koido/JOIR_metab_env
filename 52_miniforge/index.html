@@ -8,13 +8,9 @@
       
       
       
-        <link rel="canonical" href="https://koido.github.io/JOIR_metab_env/02_conda/">
+        <link rel="canonical" href="https://koido.github.io/JOIR_metab_env/52_miniforge/">
       
       
-        <link rel="prev" href="../01_vscode/">
-      
-      
-        <link rel="next" href="../03_conda_env/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +18,7 @@
     
     
       
-        <title>Step 2. Conda セットアップ - Data Science Seminar in Ophthalmology 2025「環境構築ハンズオンセミナー」</title>
+        <title>Conda セットアップガイド - Data Science Seminar in Ophthalmology 2025「環境構築ハンズオンセミナー」</title>
       
     
     
@@ -74,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#miniconda" class="md-skip">
+        <a href="#conda" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Step 2. Conda セットアップ
+              Conda セットアップガイド
             
           </span>
         </div>
@@ -269,32 +265,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Step 2. Conda セットアップ
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../02_conda/" class="md-nav__link">
         
   
   
@@ -305,179 +279,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      目次
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-windows" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Windowsユーザー向け
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Windowsユーザー向け">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.1 ダウンロード
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.2 インストール
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#13-vs-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.3 VS Code での初期設定
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-macos" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. macOSユーザー向け
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. macOSユーザー向け">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.1 ターミナルを開く
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22-apple-silicon-intel" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.2 Apple Silicon か Intel かを確認する
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#23" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.3 ダウンロード
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#24" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.4 インストール (最初のコマンド)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#25" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.5 インストール (続き)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2.5 インストール (続き)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#251" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.5.1 ライセンスの確認
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#252" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.5.2 インストール先ディレクトリの指定
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#253-conda-init" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.5.3 conda init の実行確認
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#254" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.5.4 ターミナルを再起動するか、またはシェルの設定をリロードして、以下のコマンドでインストールを確認します。
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -640,6 +441,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="1.3 VS Code での初期設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#14-conda" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 conda インストールの確認
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -731,9 +547,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#254" class="md-nav__link">
+  <a href="#254-conda" class="md-nav__link">
     <span class="md-ellipsis">
-      2.5.4 ターミナルを再起動するか、またはシェルの設定をリロードして、以下のコマンドでインストールを確認します。
+      2.5.4 conda インストールの確認
     </span>
   </a>
   
@@ -765,17 +581,17 @@
 
 
 
-<h1 id="miniconda">Miniconda セットアップガイド<a class="headerlink" href="#miniconda" title="Permanent link">&para;</a></h1>
-<p>Miniconda は conda による環境管理を最小構成で実現する軽量ディストリビューションです。
-このドキュメントでは、Windows と macOS/Linux で Miniconda をダウンロードし、インストール、初期設定する方法を説明します。</p>
+<h1 id="conda">Conda セットアップガイド<a class="headerlink" href="#conda" title="Permanent link">&para;</a></h1>
+<p>Conda は、Python の依存関係や仮想環境を管理するツールです。
+Miniforge は、conda-forge (コミュニティ主導のパッケージリポジトリ) による、conda による環境管理を最小構成で実現する軽量ディストリビューションです。
+このドキュメントでは、Windows と macOS/Linux で Miniforge をダウンロードし、インストール、初期設定する方法を説明します。</p>
 <h2 id="_1">目次<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <h2 id="1-windows">1. Windowsユーザー向け<a class="headerlink" href="#1-windows" title="Permanent link">&para;</a></h2>
 <h3 id="11">1.1 ダウンロード<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
-<p>まずは <a href="https://www.anaconda.com/download">Anaconda のダウンロードページ</a> にアクセスします。
-表示される画面右側の枠の下の方にある <strong>Skip registration</strong> を選択すると、"<strong>Miniconda Installers</strong>" の一覧が表示されます。</p>
-<p>ここから、ご利用のOSに応じたインストーラーをダウンロードしてください。</p>
+<p>まずは <a href="https://conda-forge.org/download/">Miniforge のダウンロードページ</a> にアクセスします。</p>
+<p>右下に　Windows (x86_64) と表示されているので、それをクリックします。</p>
 <h3 id="12">1.2 インストール<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
-<p>ダウンロードした<code>.exe</code> インストーラー （Windows）を実行します。</p>
+<p>ダウンロードした<code>Miniforge3-Windows-x86_64.exe</code> インストーラーを実行します。</p>
 <p>基本的に、チェック項目はデフォルトのままでインストール作業を進めてください。</p>
 <p>ただし、特にインストール先は控えておいてください。</p>
 <p>以下の手順は、デフォルト設定の想定です。</p>
@@ -783,9 +599,17 @@
 <p>インストールが完了したら、VS Code を開き、VS Code のターミナルを開きます（TODO: VS Code のターミナルを使う方法をどこかで追記</p>
 <p>Windowsの場合、初期設定だと PowerShell が使われているはずです。</p>
 <p>次のコマンドを実行します（最初の部分は、 "インストール先"\condabin/conda です）。</p>
-<div class="highlight"><pre><span></span><code>C:<span class="se">\P</span>rogramData<span class="se">\m</span>iniconda3<span class="se">\c</span>ondabin<span class="se">\c</span>onda<span class="w"> </span>init
+<div class="highlight"><pre><span></span><code><span class="n">C</span><span class="p">:\</span><span class="n">ProgramData</span><span class="p">\</span><span class="n">miniforge3</span><span class="p">\</span><span class="n">condabin</span><span class="p">\</span><span class="n">conda</span> <span class="n">init</span>
 </code></pre></div>
-<p>一度ターミナル（かVS Codeそのもの）を閉じて開くと、次からは <code>C:\ProgramData\miniconda3\condabin\conda</code> と打たなくても <code>conda</code> だけでよくなります。</p>
+<p>一度ターミナル（かVS Codeそのもの）を閉じて開くと、次からは <code>C:\ProgramData\miniforge3\condabin\conda</code> なんて打たなくても <code>conda</code> だけでよくなります。</p>
+<h4 id="14-conda">1.4 <code>conda</code> インストールの確認<a class="headerlink" href="#14-conda" title="Permanent link">&para;</a></h4>
+<p>以下のコマンドでインストールを確認します。</p>
+<div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="p">-</span><span class="n">-version</span>
+</code></pre></div>
+<p>バージョンが表示されれば、以降はターミナルで <code>conda</code> コマンドを使って環境を作成、管理できるようになります。</p>
+<p>なお、インストールされた場所を確認するには、以下のコマンドを実行します (PowerShell)。</p>
+<div class="highlight"><pre><span></span><code><span class="n">which</span><span class="p">.</span><span class="n">exe</span> <span class="n">conda</span>
+</code></pre></div>
 <h2 id="2-macos">2. macOSユーザー向け<a class="headerlink" href="#2-macos" title="Permanent link">&para;</a></h2>
 <p>GUIでインストールすることも可能ですが、ここではコマンドラインでインストールします。</p>
 <h3 id="21">2.1 ターミナルを開く<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
@@ -798,18 +622,18 @@
 <h3 id="23">2.3 ダウンロード<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
 <p>Apple Silicon の場合:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>Downloads
-wget<span class="w"> </span>https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+wget<span class="w"> </span>https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh
 </code></pre></div>
 <p>Intel の場合:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>Downloads
-wget<span class="w"> </span>https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+wget<span class="w"> </span>https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-x86_64.sh
 </code></pre></div>
 <h3 id="24">2.4 インストール (最初のコマンド)<a class="headerlink" href="#24" title="Permanent link">&para;</a></h3>
 <p>Apple Silicon の場合:</p>
-<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>Miniconda3-latest-MacOSX-arm64.sh
+<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>Miniforge3-MacOSX-arm64.sh
 </code></pre></div>
 <p>Intel の場合:</p>
-<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>Miniconda3-latest-MacOSX-x86_64.sh
+<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>Miniforge3-MacOSX-x86_64.sh
 </code></pre></div>
 <h3 id="25">2.5 インストール (続き)<a class="headerlink" href="#25" title="Permanent link">&para;</a></h3>
 <p>以降は、Apple Silicon と Intel で同じです。</p>
@@ -825,21 +649,22 @@ Please, press ENTER to continue
 </code></pre></div>
 <p>とでてくるので、 <code>yes</code> と入力して進めます。</p>
 <h4 id="252">2.5.2 インストール先ディレクトリの指定<a class="headerlink" href="#252" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>Miniconda3 will now be installed into this location:
-/Users/&quot;your_name&quot;/miniconda3
+<div class="highlight"><pre><span></span><code>Miniforge3 will now be installed into this location:
+/Users/&quot;your_name&quot;/miniforge3
 
   - Press ENTER to confirm the location
   - Press CTRL-C to abort the installation
   - Or specify a different location below
 
-[/Users/&quot;your_name&quot;/miniconda3] &gt;&gt;&gt; 
+[/Users/&quot;your_name&quot;/miniforge3] &gt;&gt;&gt;
 </code></pre></div>
 <p>インストール先ディレクトリを問われています。エンターキーを押すと、デフォルトの場所（四角カッコ内に表示）にインストールされます。
 別の場所にインストールしたい場合は、その場所を入力して、エンターキーを押してください。</p>
 <p>いずれにせよ、このディレクトリは控えておいてください。</p>
-<p>本チュートリアルでは、デフォルトの場所にインストールされていることを前提とします。</p>
+<p>なお、本チュートリアルでは、デフォルトの場所にインストールされていることを前提とします。</p>
 <h4 id="253-conda-init">2.5.3 <code>conda init</code> の実行確認<a class="headerlink" href="#253-conda-init" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>Do you wish to update your shell profile to automatically initialize conda?
+<div class="highlight"><pre><span></span><code>installation finished.
+Do you wish to update your shell profile to automatically initialize conda?
 This will activate conda on startup and change the command prompt when activated.
 If you&#39;d prefer that conda&#39;s base environment not be activated on startup,
    run the following command when conda is activated:
@@ -847,10 +672,13 @@ If you&#39;d prefer that conda&#39;s base environment not be activated on startu
 conda config --set auto_activate_base false
 
 You can undo this by running `conda init --reverse $SHELL`? [yes|no]
-[yes] &gt;&gt;&gt; 
+[no] &gt;&gt;&gt;
 </code></pre></div>
-<p>Miniconda3 の初期化を問われています。<code>yes</code> と入力してください。</p>
-<h4 id="254">2.5.4 ターミナルを再起動するか、またはシェルの設定をリロードして、以下のコマンドでインストールを確認します。<a class="headerlink" href="#254" title="Permanent link">&para;</a></h4>
+<p>Miniforge3 の初期化設定を問われています。<code>yes</code> と入力してください。</p>
+<p>すると、デフォルトのシェル ($SHELL) に、<code>conda</code> の初期化設定が追加されます。</p>
+<h4 id="254-conda">2.5.4 <code>conda</code> インストールの確認<a class="headerlink" href="#254-conda" title="Permanent link">&para;</a></h4>
+<p>ターミナルを再起動するか、またはシェルの設定をリロードします。</p>
+<p>以下のコマンドでインストールを確認します。</p>
 <div class="highlight"><pre><span></span><code>conda<span class="w"> </span>--version
 </code></pre></div>
 <p>バージョンが表示されれば、以降はターミナルで <code>conda</code> コマンドを使って環境を作成、管理できるようになります。</p>
