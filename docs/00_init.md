@@ -12,5 +12,5 @@
 
 - 小井土 大 (KOIDO Masaru)
 - 気軽にDMください！
-   - <img src="/img/X_logo.png" style="height:1em; vertical-align:middle;"> : @m_koido
-   - <img src="/img/LinkedIn.png" style="height:1em; vertical-align:middle;"> : masaru-koido-53b284144
+   - <img src="../img/X_logo.png" style="height:1em; vertical-align:middle;"> : @m_koido
+   - <img src="../img/LinkedIn.png" style="height:1em; vertical-align:middle;"> : masaru-koido-53b284144
