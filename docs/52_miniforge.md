@@ -26,7 +26,9 @@ Miniforge は、conda-forge (コミュニティ主導のパッケージリポジ
 
 ### 1.3 VS Code での初期設定
 
-インストールが完了したら、VS Code を開き、VS Code のターミナルを開きます（TODO: VS Code のターミナルを使う方法をどこかで追記
+インストールが完了したら、VS Code を開き、VS Code のターミナルを開きます（VS Code右上にあるアイコンのうち、左から3つ目をクリック）。
+
+![VS Code のターミナルを開く](./img/VSCode_icons.png)
 
 Windowsの場合、初期設定だと PowerShell が使われているはずです。
 
@@ -78,14 +80,14 @@ Apple Silicon の場合:
 
 ```bash
 cd Downloads
-wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh
+curl -L -O https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh
 ```
 
 Intel の場合:
 
 ```bash
 cd Downloads
-wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-x86_64.sh
+curl -L -O https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-x86_64.sh
 ```
 
 ### 2.4 インストール (最初のコマンド)

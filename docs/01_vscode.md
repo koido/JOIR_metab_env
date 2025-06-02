@@ -30,7 +30,21 @@ Visual Studio Code (VS Code) は Microsoft が提供する軽量な開発用エ�
 
 ## 2. VS Code の使い方概略
 
-TODO: スクリーンショットを掲載するなどして、簡潔に説明を記載予定です。もしくは当日投影して説明します。
+VS Codeの画面は、標準設定だと、以下のような見た目です。
+![VS Code の画面](https://user-images.githubusercontent.com/35271042/118224532-3842c400-b438-11eb-923d-a5f66fa6785a.png)
+画像の出典：https://github.com/microsoft/vscode
+
+左は「エクスプローラー」で、ファイルを選択したり、フォルダを開いたりします。各種拡張機能も、操作が必要なものは、ここで行います。
+
+真ん中の上は「エディタ」で、コードを編集します。
+
+真ん中の下は「ターミナル」で、コマンドを実行します（初期画面だと隠れている）。
+
+右は「GitHub Copilot」のチャット画面が隠れています。
+
+おおよそのこのルールだけ覚えておくと、VS Code右上にある以下のアイコンを活用して、柔軟にVS Codeの見た目を変えられます。
+
+![VS Code のアイコン](./img/VSCode_icons.png)
 
 ## 3. VS Code 拡張機能とは
 

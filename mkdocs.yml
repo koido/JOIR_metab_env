@@ -31,6 +31,8 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
+  features:
+    - content.code.copy
 
 # Extra CSS for custom styles
 extra_css:

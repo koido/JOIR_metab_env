@@ -17,3 +17,14 @@ micromamba create -n tf24_env -c conda-forge \
     python==3.8.15 tensorflow==2.4.0 opencv==4.4.0 numpy==1.19 \
     --platform=osx-64
 ```
+
+## Windows環境でのMiniforgeの利用の際、TensorFlowのインストールに失敗する
+
+conda-forgeでは、Windows用のtensorflow>2.0.0が提供されていません。
+その場合、若干トリッキーですが、`conda` で作った仮想環境（Pythonバージョン指定）に `pip` で必要なライブラリをインストールすることにします。
+
+```powershell
+conda create -n tf24_env -c conda-forge -y python==3.8.15
+conda activate tf24_env
+pip install tensorflow==2.4.0 opencv-python==4.3.0.36 numpy==1.19.2
+```

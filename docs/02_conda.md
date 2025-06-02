@@ -27,7 +27,7 @@ Miniconda は conda による環境管理を最小構成で実現する軽量デ
 
 ### 1.3 VS Code での初期設定
 
-インストールが完了したら、VS Code を開き、VS Code のターミナルを開きます（TODO: VS Code のターミナルを使う方法をどこかで追記
+インストールが完了したら、VS Code を開き、VS Code のターミナルを開きます。
 
 Windowsの場合、初期設定だと PowerShell が使われているはずです。
 
@@ -63,14 +63,14 @@ Apple Silicon の場合:
 
 ```bash
 cd Downloads
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+curl -L -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
 ```
 
 Intel の場合:
 
 ```bash
 cd Downloads
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+curl -L -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 ```
 
 ### 2.4 インストール (最初のコマンド)
