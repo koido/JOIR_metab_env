@@ -573,11 +573,9 @@
 そのため、JOIRの公開されているモデルに付随する <code>requirements.txt</code> に記載されたライブラリのバージョンと一部異なる場合があることにご留意ください。</p>
 <p>今回は、CPU での実行を想定した環境を構築します。</p>
 <h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h3>
-<p>conda-forgeでは、tensorflow&gt;2.0.0が提供されていないため、
-若干トリッキーですが、<code>conda</code> で作った仮想環境（Pythonバージョン指定）に <code>pip</code> で必要なライブラリをインストールすることにします。</p>
-<div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">create</span> <span class="n">-n</span> <span class="n">tf24_env</span> <span class="n">-c</span> <span class="n">conda-forge</span> <span class="n">-y</span> <span class="n">python</span><span class="p">==</span><span class="n">3</span><span class="p">.</span><span class="n">8</span><span class="p">.</span><span class="n">15</span>
-<span class="n">conda</span> <span class="n">activate</span> <span class="n">tf24_env</span>
-<span class="n">pip</span> <span class="n">install</span> <span class="n">tensorflow</span><span class="p">==</span><span class="n">2</span><span class="p">.</span><span class="n">4</span><span class="p">.</span><span class="n">0</span> <span class="n">opencv-python</span><span class="p">==</span><span class="n">4</span><span class="p">.</span><span class="n">3</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">36</span> <span class="n">numpy</span><span class="p">==</span><span class="n">1</span><span class="p">.</span><span class="n">19</span><span class="p">.</span><span class="n">2</span>
+<p>tensorflow==2.4.0 がconda-forgeにないので、近いバージョン（2.3.0）を使います。
+他の依存関係も複雑ですが、Windows端末でインストールが正常に完了した以下のバージョンを、本セミナーでは使用します。</p>
+<div class="highlight"><pre><span></span><code><span class="n">conda</span> <span class="n">create</span> <span class="n">-n</span> <span class="n">tf24_env</span> <span class="n">-c</span> <span class="n">conda-forge</span> <span class="n">-y</span> <span class="n">python</span><span class="p">==</span><span class="n">3</span><span class="p">.</span><span class="n">8</span><span class="p">.</span><span class="n">15</span> <span class="n">tensorflow</span><span class="p">==</span><span class="n">2</span><span class="p">.</span><span class="n">3</span><span class="p">.</span><span class="n">0</span> <span class="n">opencv</span><span class="p">==</span><span class="n">4</span><span class="p">.</span><span class="n">6</span><span class="p">.</span><span class="n">0</span> <span class="n">numpy</span><span class="p">==</span><span class="n">1</span><span class="p">.</span><span class="n">23</span><span class="p">.</span><span class="n">5</span>
 </code></pre></div>
 <h3 id="macos-apple-silicon">macOS (Apple Silicon)<a class="headerlink" href="#macos-apple-silicon" title="Permanent link">&para;</a></h3>
 <p>Apple Silicon では TensorFlow 2.4 がネイティブ対応していないため、x86_64（つまり、Intel CPUの環境） 向けパッケージを流用します。</p>
@@ -649,7 +647,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
