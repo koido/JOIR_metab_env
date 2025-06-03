@@ -375,6 +375,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#conda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conda 環境作成がよくわからないが上手くいかない
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#miniconda-miniforge" class="md-nav__link">
     <span class="md-ellipsis">
       Miniconda ではなく、Miniforge を使って環境を作成したい
@@ -489,6 +498,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#conda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conda 環境作成がよくわからないが上手くいかない
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#miniconda-miniforge" class="md-nav__link">
     <span class="md-ellipsis">
       Miniconda ではなく、Miniforge を使って環境を作成したい
@@ -534,10 +552,25 @@
 <h1 id="qa">Q&amp;A<a class="headerlink" href="#qa" title="Permanent link">&para;</a></h1>
 <h2 id="conda-out-of-memory">Conda 環境の作成時に out of memory が出た<a class="headerlink" href="#conda-out-of-memory" title="Permanent link">&para;</a></h2>
 <p>環境構築自体は、より軽量な Micromamba を利用することで解決できる可能性がありますが、その後のモデル実行時にもメモリ不足が発生する可能性が高いと考えられます。</p>
+<h2 id="conda">Conda 環境作成がよくわからないが上手くいかない<a class="headerlink" href="#conda" title="Permanent link">&para;</a></h2>
+<p>ずっと処理が終わらない or ちゃんと指示通りやってるのに以下のエラーが出る</p>
+<div class="highlight"><pre><span></span><code>PackagesNotFoundError: The following packages are not available from current channels:
+  - opencv==4.4.0
+  - numpy==1.19
+</code></pre></div>
+<p>→ 一度次のコマンドを入力して、再度試してみてください</p>
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>update<span class="w"> </span>-all
+</code></pre></div>
 <h2 id="miniconda-miniforge">Miniconda ではなく、Miniforge を使って環境を作成したい<a class="headerlink" href="#miniconda-miniforge" title="Permanent link">&para;</a></h2>
 <p><a href="../52_miniforge/">こちら</a> を参照してください。</p>
 <h2 id="miniconda-micromamba-apple-silicon">Miniconda ではなく、Micromamba を使って環境を作成したい (Apple Silicon)<a class="headerlink" href="#miniconda-micromamba-apple-silicon" title="Permanent link">&para;</a></h2>
-<p>Rosetta 2 をインストールしてから、次のコマンドで環境を作成します。</p>
+<p>Rosetta 2 をインストールしてから、次のコマンドで、micromambaをインストールします。</p>
+<div class="highlight"><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>micromamba
+</code></pre></div>
+<p>または、</p>
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;</span><span class="si">${</span><span class="nv">SHELL</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-L<span class="w"> </span>micro.mamba.pm/install.sh<span class="o">)</span>
+</code></pre></div>
+<p>次に、micromambaで仮想環境を作成します。</p>
 <div class="highlight"><pre><span></span><code>micromamba<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>tf24_env<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span><span class="nv">python</span><span class="o">==</span><span class="m">3</span>.8.15<span class="w"> </span><span class="nv">tensorflow</span><span class="o">==</span><span class="m">2</span>.4.0<span class="w"> </span><span class="nv">opencv</span><span class="o">==</span><span class="m">4</span>.4.0<span class="w"> </span><span class="nv">numpy</span><span class="o">==</span><span class="m">1</span>.19<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--platform<span class="o">=</span>osx-64
